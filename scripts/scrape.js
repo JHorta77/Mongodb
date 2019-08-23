@@ -32,11 +32,12 @@ let scrape = function () {
           summary: sumNeat,
           url: "https://www.nytimes.com" + url
         };
-
+        console.log("dataToAdd", dataToAdd);
         articles.push(dataToAdd);
       }
     });
     return articles;
+    //console.log("articles", articles);
   });
 };
 
