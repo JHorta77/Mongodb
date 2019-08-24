@@ -19,7 +19,6 @@ app.use(bodyParser.json());
 
 app.use(routes);
 
-// If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/nyt_db";
 
 mongoose.connect(MONGODB_URI);
