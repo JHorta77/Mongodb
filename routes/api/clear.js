@@ -1,6 +1,6 @@
-// var router = require("express").Router();
-// var clearController = require("../../controllers/clear");
+var router = require("express").Router();
+var clearController = require("../../controllers/clear");
 
-// router.get("/", clearController.clearDB);
+router.get("/", clearController.clearDB);
 
-// module.exports = router;
+module.exports = router;
